@@ -1,10 +1,11 @@
 import pandas as pd
 
 # Open excel file  whch has column records.
-df = pd.read_excel('test_data/spending_tracking_2025.xlsx', header=None)
+sheets = pd.read_excel('test_data/spending_tracking_2025.xlsx', sheet_name = None, header=None)
 
 # Transpose.
-df = df.transpose()
+with pd.ExcelWriter('test_data/converted_file.xlsx') as writer:
+	for sheet_name, df in sheets.items():
+		df_t = df.transpose()
+		df_t.to_excel(writer, sheet_name = sheet_name, index = False, header = False)
 
-# Save excel file with row records.
-df.to_excel('test_data/converted_file.xlsx', index = False, header = False)

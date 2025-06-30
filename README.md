@@ -3,5 +3,6 @@ I've also worked with such written data files in excel, so decided to make a sma
 transpose records in excel files.
 
 TODO:
+~~- make the script running through all sheets in excel file~~
 - script have to ask for file name (instead puttinh a file name in code)
 - future - script recognizes all excel files in folder and asks (one by one) whch has to be transposed
