@@ -6,5 +6,4 @@ TODO:
 
 - ~~make the script running through all sheets in excel file~~
 - ~~script have to ask for file name (instead putting a file name in code)~~
-- script have to ask for file name (instead putting a file name in code)
 - future - script recognizes all excel files in folder and asks (one by one) whch has to be transposed
